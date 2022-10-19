@@ -67,9 +67,6 @@
     "python.linting.flake8Enabled": false,
     "python.linting.pylintEnabled": false,
     "python.terminal.activateEnvironment": false,
-    "ruby.lint": {
-        "rubocop": true
-    },
     "telemetry.telemetryLevel": "off",
     "window.restoreWindows": "none",
     "window.newWindowDimensions": "maximized",
@@ -80,4 +77,25 @@
     "workbench.settings.useSplitJSON": true,
     "workbench.startupEditor": "newUntitledFile",
     "workbench.panel.defaultLocation": "right",
+    "ruby.rubocop.executePath": "/home/kevcoutellier/.rbenv/shims/",
+    "ruby.rubocop.onSave": true,
+    "ruby.lint": {
+      "ruby": {
+        "unicode": true //Runs ruby -wc -Ku
+      },
+      "reek": true,
+      "rubocop": {
+        "lint": true,
+        "rails": true
+      },
+      "fasterer": true,
+      "debride": {
+        "rails": true //Add some rails call conversions.
+      },
+      "ruby-lint": true
+    },
+    "ruby.locate": {
+      "include": "**/*.rb",
+      "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}"
+    }
 }
