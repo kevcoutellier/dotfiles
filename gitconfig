@@ -60,5 +60,5 @@
 [init]
   defaultBranch = master
 [user]
-	email = kev.coutellier@gmail.com
-	name = kevin coutellier
+	email = kev.coutellier@gmail.coÃm
+	name = Kevin Coutellier
